@@ -16,6 +16,7 @@ Kvlog writes [logfmt](https://brandur.org/logfmt)'ish key/value entries with 3 p
 - `type`: a log type identifier
 - `msg`: a log info or error string, or, a JSON string using a map input
 
+## Usage
 
 ### Logging with arbitrary map input
 Input:
@@ -47,4 +48,7 @@ Output:
 ts='2017-03-08T11:48:48-0700' type='database' msg='{"error":"something broke"}'
 ```
 
-##
+## FAQ
+**What problem does this solve?**: Insufficient wheel reinvention.
+
+**Who is this for?**: People who love logs and don't want to spend more than 30s learning how to use a logging library. People that love features but hate features where they aren't necessary.
