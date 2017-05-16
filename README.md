@@ -1,5 +1,5 @@
 # kvlog
-Cripplingly simple kv logging. It's not the _fastest_ (good for > 600k logs/s. on modern laptop hardware), but has essentially no features/options. Which is a fucking awesome antithesis to bloated libraries.
+Cripplingly simple kv logging. It's not the _fastest_ (good for > 600k logs/s. on modern laptop hardware), but has essentially no features/options, which makes it awesome.
 
 ```
 % go test -bench=Log -benchmem | grep -v ts
@@ -47,8 +47,3 @@ Output:
 ```
 ts='2017-03-08T11:48:48-0700' type='database' msg='{"error":"something broke"}'
 ```
-
-## FAQ
-**What problem does this solve?**: Insufficient wheel reinvention.
-
-**Who is this for?**: People who love logs and don't want to spend more than 30s learning how to use a logging library. People that love features but hate features where they aren't necessary.
